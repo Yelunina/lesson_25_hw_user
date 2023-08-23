@@ -14,6 +14,7 @@ public class User {
     }
 
     public void setEmail(String email) {
+        email = email.trim();
         if (emailIsValid(email)) {
             this.email = email;
         } else {
@@ -45,6 +46,7 @@ public class User {
                 return false;
             }
         }
+
         return true;
     }
 
